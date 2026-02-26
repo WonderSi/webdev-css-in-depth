@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            box-sizing: border-box;
+        }
+
+        *,
+        ::before,
+        ::after {
+            box-sizing: inherit;
+        }
+
+        body {
+            background-color: #709b90;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        body * + * {
+            margin-top: 1.5em;
+        }
+
+        .container {
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Тандем</h1>
+        </header>
+        <nav>
+            <ul class="site-nav">
+                <li><a href="/">Главная</a></li>
+                <li><a href="/features">Возможности</a></li>
+                <li><a href="/pricing">Цены</a></li>
+                <li><a href="/support">Поддержка</a></li>
+                <li class="nav-right">
+                    <a href="/about">О нас</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="flex">
+            <div class="column-main tile">
+                <h1>Правильный путь к работе в команде</h1>
+                <p>Тысячи команд по всему миру пользуются услугами компании <b>Тандем</b> для повышения эффективности взаимодействия.</p>
+            </div>
+            <div class="column-sidebar">
+                <div class="tile">
+                    <form class="login-form">
+                        <h3>Авторизация</h3>
+                        <p>
+                            <label for="username">Логин:</label>
+                            <input type="username" type="text" name="username" />
+                        </p>
+                        <p>
+                            <label for="password">Пароль:</label>
+                            <input type="password" type="password" name="password" />
+                        </p>
+                        <button type="submit">Войти</button>
+                    </form>
+                </div>
+                <div class="tile centered">
+                    <small>Тарифные планы от</small>
+                    <div class="cost">
+                        <span class="cost-currency">₽</span>
+                        <span class="cont-roubles">999</span>
+                        <span class="cost-kopecks">.00</span>
+                    </div>
+                    <a class="cta-buttom" href="/pricing">
+                        Зарегистрироваться
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
